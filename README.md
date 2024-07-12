@@ -1,6 +1,5 @@
-### [Project on Vim.org](http://www.vim.org/scripts/script.php?script_id=4177)
-
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mbbill/undotree?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+### WIP!
+### [Fork of undotree](http://www.vim.org/scripts/script.php?script_id=4177)
 
 ### Screenshot
 
@@ -9,7 +8,6 @@
 ### Table of Contents
 
 <!-- TOC -->
-
 - [Description](#description)
 - [Download and Install](#download-and-install)
 - [Usage](#usage)
@@ -19,9 +17,9 @@
 - [Author](#author)
 
 <!-- /TOC -->
-
+**this is a work in progress!**
 ### Description
-
+An attempt to lua-fy and introduce modern features into the undotree of old. It is a small personal challenge that aims to integrate some features that I would like, learn some basics of vimscript and lua, and break away from the restrictions of standard vim.
 Undotree visualizes the undo history and makes it easy to browse and switch between different undo branches. You may be wondering, _what are undo "branches" anyway?_ They're a feature of Vim that allow you to go back to a prior state even after it has been overwritten by later edits. For example: In most editors, if you make some change A, followed by change B, then go back to A and make another change C, normally you wouldn't be able to go back to change B because the undo history is linear. That's not the case with Vim, however. Vim internally stores the entire edit history for each file as a single, monolithic tree structure; this plug-in exposes that tree to you so that you can not only switch back and forth between older and more recent edits linearly but can also switch between diverging branches.
 
 > Note: use `:help 'undolevels'` in Vim for information on configuring the size of the undo history
